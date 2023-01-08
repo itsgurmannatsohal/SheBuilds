@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@iden3/js-iden3-auth": "^0.1.4",
+    "tslib": "^2.4.0"
+  },
+  "name": "verifier-polygon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+

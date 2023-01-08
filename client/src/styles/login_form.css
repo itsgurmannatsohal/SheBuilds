@@ -1,0 +1,20 @@
+body{
+    font-family: 'Open Sans';
+    box-shadow: 10px;
+}
+.heading{
+    color: #402E9C ;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 100px;
+}
+
+.qr{
+    width: 250px;
+    height: 250px;
+}
+
+
+
