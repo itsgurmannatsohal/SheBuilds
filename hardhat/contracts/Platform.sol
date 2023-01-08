@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
- //pending complaints 
- //complaint completion or not 
- //number of closed 
- //number of pending 
- //opnen zeppelin 
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+
 contract Platform {
 
+uint public pendingComplaint ;
 uint public totalCompliants;
 uint public complaintId ;
 address public owner ;
@@ -21,26 +20,28 @@ bool public forWhom ;
  string district;
  uint pincode;
  uint mobileNumber;
-//  enum gender{
-//     female,
-//     male,
-//     transgender,
-//  };
+ enum gender{
+    female,
+    male,
+    transgender,
+ };
  string homeAddress ;
  string emailId ;
  string complaint ;
 string[] suspects ; 
-// enum domain{
-// Domestic Violence ,
-// Harasmsent ,
-// Abuse ,
-// Dowry ,
-// Unequal Pay ,
-// Discrimination , 
-// Theft ,
-// Murder ,
-// Not Sure Please Help me find out ,  
-// }; // AI integration 
+enum domain{
+Domestic Violence ,
+Harasmsent ,
+Abuse ,
+Dowry ,
+Unequal Pay ,
+Discrimination , 
+Theft ,
+Murder ,
+Not Sure Please Help me find out ,  
+}; // AI integration 
+
+bool closed ;
 
  }
  //check it s security
@@ -122,7 +123,8 @@ function addDomain(){
 //previous case 
 
 function previousCase(uint _compliantId) public {
-require(); 
+require( ); 
+
 }
 function seePreviousData() public {
 
